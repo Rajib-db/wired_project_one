@@ -1,0 +1,70 @@
+// font famelly
+$heading_font: 'Mulish', sans-serif;
+$body_font:'Mulish', sans-serif;
+
+//color
+$body_color: #E4E4E4;
+$black_color: #000000;
+$menu_color: #fff;
+$sub_title: #2297C2;
+$heading_color: #03114A;
+$text_color: #5A5960;
+$rating_color: #FFAD45;
+$border_color: #003F90;
+$yellow_bg: #FFE52C;
+$white_bg: #ffffff;
+$footer_bg: #3B3B3B;
+// button
+$btn_bg_1: #FFFFFF;
+$btn_bg_2: #003F90;
+$btn_bg_3: #FFE52C;
+$slider_btn_bg: #1E9EED;
+$slider_dark_btn-bg: #09090C;
+$btn_hover_bg: #1E9EED;
+$btn_shadow_1: rgba(0, 0, 0, 0.159);
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$base_color_1: rgb(242, 101, 34);
+$base_color_2: rgb(242, 101, 34);
+$menu_color: hsl(0, 0%, 100%);
+
+//typography
+$h1_font_size: 8rem;
+$h2_font_size: 6rem;
+$h3_font_size: 4rem;
+$h4_font_size: 3rem;
+$h5_font_size: 2.2rem;
+$h6_font_size: 1.8rem;
+
+$body_font_size: 2rem;
+
+
+//font weight
+$font_weights: (
+    "regular": 400,
+    "medium": 500,
+    "Semi-bold": 600,
+    "bold": 700,
+    "extra-bold": 800,
+    "black": 900
+);
+
+//font line height
+$body_line_height: 1.6;
+$h1_line_height: 1;
+$h2_line_height: 1.2;
+$h3_line_height: 1.5;
+$h4_line_height: 1.4;
+$h5_line_height: 1.8;
+
+$big_device: '(min-width: 991px)';
+$tab: '(max-width: 991px)';
+$mobile:'(max-width: 767.98px)';
+$xs_mobile:'(max-width: 576px)';
+$wide_mobile:'only screen and (min-width: 480px) and (max-width: 767.98px)';
+$extra_big_screen: 'only screen and (min-width: 1441px) and (max-width: 1680px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1441px)';
+
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767.98px)';

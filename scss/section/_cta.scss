@@ -1,0 +1,43 @@
+/* cta section css */
+.cta_height {
+    min-height: 550px;
+}
+
+.linear_bg {
+    background: rgb(34, 151, 194);
+    background: linear-gradient(90deg, rgba(34, 151, 194, 1) 0%, rgba(8, 172, 162, 1) 100%, rgba(8, 172, 162, 1) 100%);
+}
+
+.cta_content_wrap {
+    &.cta_sec_padding {
+        padding: 8rem 0;
+    }
+
+    .title{
+        color: $white;
+        margin-bottom: 3rem;
+    }
+    .text{
+        color: $white;
+        margin-bottom: 2.5rem;
+    }
+
+    @media #{$big_device}{
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.cta_bg_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    
+    @media #{$medium_device}{
+        opacity: .8;
+    }
+    @media #{$tab}{
+        display: none;
+    }
+}

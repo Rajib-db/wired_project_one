@@ -1,0 +1,152 @@
+/* portfolio section css */
+.wrd_portfolio_slider {
+    .swiper-container {
+        width: 100%;
+        padding-bottom: 135px;
+
+        @media #{$mobile}{
+            padding-bottom: 100px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 460px;
+
+            .portfolio_items {
+                position: relative;
+                z-index: 1;
+                border-radius: 1rem;
+
+                .portfolio_img {
+                    img {
+                        border-radius: 1rem;
+                    }
+                }
+
+                .portfolio_text {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 2;
+                    color: $white;
+                    opacity: 0;
+                    visibility: hidden;
+                    padding: 2rem 2.2rem;
+                    .port_title{
+                        font-size: 3rem;
+                        font-weight: weight(extra-bold);
+                    }
+                    .port_text{
+                        font-size: 1.6rem;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 62, 144, 0.69);
+                    content: "";
+                    border-radius: 10px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    .portfolio_text {
+                        z-index: 3;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    .button-prev,
+    .button-next {
+        position: absolute;
+        top: inherit;
+        left: 50%;
+        bottom: 0rem;
+        width: 6.3rem;
+        height: 6.3rem;
+        border-radius: 50%;
+        background-color: $slider_dark_btn-bg;
+        line-height: 6.3rem;
+        text-align: center;
+        color: $white;
+        font-size: 3rem;
+        transition: .3s ease-in;
+
+        @media #{$mobile}{
+            left: 55%;
+        }
+
+        @media #{$wide_mobile}{
+            left: 50%;
+        }
+
+        i {
+            transition: .3s ease-in;
+        }
+
+        &:hover {
+            background: $slider_btn_bg;
+        }
+    }
+
+    .button-prev {
+        left: 46%;
+
+        @media #{$extra_big_screen}{
+            left: 44%;
+        }
+
+        @media #{$big_screen}{
+            left: 44%;
+        }
+
+        @media #{$medium_device}{
+            left: 42%;
+        }
+
+        @media #{$tab_device}{
+            left: 40%;
+        }
+
+        @media #{$mobile}{
+            left: 32%;
+        }
+
+        @media #{$wide_mobile}{
+            left: 36%;
+        }
+
+        &:hover {
+            i {
+                transform: translateX(01.5rem);
+            }
+        }
+    }
+
+    .button-next {
+        right: auto;
+
+        &:hover {
+            i {
+                transform: translateX(-0.5rem);
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+/* brand section css */
+
+.brand_padding{
+    padding-top: 13rem;
+    padding-bottom: 11.5rem;
+}
+.brand_wrap{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    @media #{$medium_device}{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    @media#{$tab_device}{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    @media #{$mobile}{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    &.brand_w{
+        max-width: 146.4rem;
+        margin: 0 auto;
+
+        @media #{$mobile}{
+            max-width: 36.4rem;
+        }
+    }
+
+    .brand_items{
+        display: table;
+        height: 6.5rem;
+    }
+    .brand_table_cell{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}

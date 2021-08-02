@@ -1,0 +1,82 @@
+/* header section css */
+
+.wrd_header_wrap{
+    padding: 3.4rem 0rem;
+
+    .navbar-toggler{
+       @media #{$tab}{
+        font-size: 4.5rem;
+        color: $heading_color;
+        border-color: transparent;
+        
+        &:focus{
+            box-shadow: 0 0 0 0;
+        }
+       }
+    }
+
+    .navbar-nav{
+        @media #{$tab}{
+            position: relative;
+            text-align: center;
+            padding: 10rem 0;
+            background-color: $white;
+            z-index: 22;
+        }
+        .nav-item{
+            &:not(:last-child){
+                margin-right: 4rem;
+
+                @media #{$tab}{
+                    margin-right: 0;
+                    margin-bottom: 3rem;
+                }
+            }
+            .nav-link{
+                color: $white;
+                font-size: 2rem;
+                font-weight: weight(bold);
+                text-transform: capitalize;
+                line-height: 1.1;
+
+                @media #{$tab}{
+                    font-size: 2rem;
+                    color: $text_color;
+                }
+
+                &:hover{
+                    color: $heading_color;
+                }
+            }
+        }
+    }
+
+    .header_btn{
+        margin-left: 7rem;
+    }
+
+    
+}
+
+.menu_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4;
+    background: $white;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .08);
+    padding: 1.5rem 0;
+
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: $text_color;
+                &:hover{
+                    color: $heading_color;
+                }
+            }
+        }
+    }
+}

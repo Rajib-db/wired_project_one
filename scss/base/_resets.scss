@@ -1,0 +1,186 @@
+/******** common css ********/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media #{$tab}{
+        font-size: 55%;
+    }
+}
+
+body {
+    font: {
+        family: $body_font;
+        size: $body_font_size;
+        weight: weight(regular);
+    }
+
+    line-height: $body_line_height;
+    color: $text_color;
+    background: $body_color;
+}
+
+input:hover,
+input:focus {
+    outline: none !important;
+    box-shadow: 0px 0px 0px 0px transparent;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    @include transform_time(.3s);
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+a:focus,
+.button:focus,
+button:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: all .25s cubic-bezier(.645, .045, .355, 1);
+    transition: all .25s cubic-bezier(.645, .045, .355, 1);
+}
+
+
+.custom-file-input:focus~.custom-file-label {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+//input box css
+.krb_input {
+    padding: 2.5rem 3rem;
+    border: 0.1rem solid #D9D9D9;
+    background-color: #F9F9F9;
+    border-radius: 0.1rem;
+    color: $text_color;
+    font-size: 1.8rem;
+    height: auto;
+    margin-bottom: 2.5rem;
+    background-clip: border-box;
+    @include transform_time(.3s);
+
+    &:focus {
+        border: 0.1px solid #fff;
+        box-shadow: none;
+
+        &::placeholder {
+            color: $text_color;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .custom_container {
+        max-width: 1170px;
+    }
+
+    .custom_container_fluid {
+        max-width: 1440px;
+    }
+}
+
+.section_title {
+    margin-bottom: 5rem;
+
+    .sec_title {
+        margin: inherit;
+        margin-bottom: 1.5rem;
+    }
+
+    .sec_text {
+        color: $text_color;
+    }
+}
+
+.section_padding {
+    padding-top: 135px;
+    padding-bottom: 110px;
+
+    @media #{$mobile}{
+        padding-top: 160px;
+    }
+}
+
+.padding_top {
+    padding-top: 130px;
+}
+
+
+.padding_bottom {
+    padding-bottom: 70px;
+}
+
+.p_absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.scroll_to_top {
+    display: inline-grid;
+    place-items: center;
+    background-color:$btn_bg_2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    font-size: 24px;
+    color: $white;
+}
+
+.scroll_to_top:hover {
+    cursor: pointer;
+    background-color: $yellow_bg;
+    color: $white;
+}
+
+.scroll_to_top:active {
+    background-color: $btn_bg_3;
+}
+
+.scroll_to_top.show {
+    opacity: 1;
+    visibility: visible;
+}

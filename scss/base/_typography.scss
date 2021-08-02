@@ -1,0 +1,81 @@
+/******** typography css ********/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading_color;
+    font-family: $heading_font;
+    font-weight: weight(Semi-bold);
+    margin-top: 0;
+    line-height: 1.5;
+    transition: all 0.3s ease-out 0s;
+}
+
+h1 {
+    font-size: $h1_font_size;
+    font-weight: weight(extra-bold);
+    line-height: $h1_line_height;
+}
+
+h2 {
+    font-size: $h2_font_size;
+    font-weight: weight(extra-bold);
+    line-height: $h2_line_height;
+    line-height: $h2_line_height;
+}
+
+h3 {
+    font-size: $h3_font_size;
+    font-weight: weight(Semi-bold);
+    line-height: $h3_line_height;
+}
+
+h4 {
+    font-size: $h4_font_size;
+    font-weight: weight(bold);
+    line-height: $h4_line_height;
+}
+
+h5 {
+    font-size: $h5_font_size;
+    font-weight: weight(extra-bold);
+    line-height: $h5_line_height;
+}
+
+p {
+    font-family: $body_font;
+    font-weight: weight(regular);
+    line-height: $body_line_height;
+    font-size: $body_font_size;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.font_300 {
+    font-weight: 300 !important;
+}
+
+.font_400 {
+    font-weight: 400 !important;
+}
+
+.font_500 {
+    font-weight: 500 !important;
+}
+
+.font_600 {
+    font-weight: 600 !important;
+}
+
+.font_700 {
+    font-weight: 700 !important;
+}
+
+.font_800 {
+    font-weight: 800 !important;
+}
+
+
+

@@ -1,0 +1,9 @@
+// font weight
+@function weight($weight_name) {
+	@return map-get($font_weights, $weight_name);
+}
+
+// pixel to rem
+@function rem($pixels, $context:16){
+    @return($pixels / $context) * 1rem;
+}

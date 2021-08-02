@@ -1,0 +1,89 @@
+/* servies section css */
+.wrd_servies_section {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .servies_shape_left {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        z-index: -2;
+    }
+
+    .servies_shape_right{
+        position: absolute;
+        right: -1.6rem;
+        bottom: -15%;
+        z-index: -2;
+    }
+}
+
+.servies_title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 37rem;
+    
+    .title {
+        margin-bottom: 1.6rem;
+    }
+
+    .text {
+        color: $text_color;
+        font-size: 1.6rem;
+    }
+    
+    @media #{$medium_device}{
+        right: -90px;
+    }
+    @media #{$mobile}{
+        top: -149px;
+        right: -46px;
+    }
+
+    @media #{$wide_mobile}{
+        right: 25px;
+    }
+    
+}
+
+.mb-40 {
+    margin-bottom: 4rem;
+}
+
+.wrd_servies_items {
+    padding: 3rem 4.2rem;
+    border-radius: 2.2rem;
+    background: $white;
+    border: 0.1rem solid $border_color;
+
+    .servies_thumb {
+        margin-bottom: 2rem;
+    }
+
+    .servies_content {
+        .title {
+            margin-bottom: 1.4rem;
+        }
+
+        .text {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            color: $text_color;
+        }
+
+        .icon {
+            display: block;
+            transition: .3s ease-in;
+
+            img {
+                max-width: 3.2rem;
+            }
+
+            &:hover {
+                transform: translateX(1rem);
+            }
+        }
+    }
+}
